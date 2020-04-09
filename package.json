@@ -1,0 +1,29 @@
+{
+    "name": "qrapi",
+    "version": "1.0.0",
+    "description": "API for generating QR codes",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/na-wu/qrapi.git"
+    },
+    "author": "Nathan Wu",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/na-wu/qrapi/issues"
+    },
+    "homepage": "https://github.com/na-wu/qrapi#readme",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb-base": "^14.1.0",
+        "eslint-plugin-import": "^2.20.2"
+    }
+}

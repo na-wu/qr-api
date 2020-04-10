@@ -14,10 +14,10 @@
 <br>
 
 ###### Testing
-` git clone <repo> <br>
-    cd <repo> <br>
-    npm install <br>
-    npm start `
+` git clone <repo>  
+    cd <repo>  
+    npm install  
+    npm start  `
 
 You can then make post requests to `localhost:3000/api/generate`
 

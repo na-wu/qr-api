@@ -1,6 +1,8 @@
 <p align="center">
   
-
+<a href="https://apiqr.herokuapp.com/api/generate">
+    <img src="https://share.getcloudapp.com/4guy0Nly" alt="qrcode" width=100 height=100>
+  </a>
   <h2 align="center">QR Code API</h3>
 
   <p align="center">

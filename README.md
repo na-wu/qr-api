@@ -14,8 +14,8 @@
 <br>
 
 ###### Testing
-` git clone <repo>`
-` cd <repo>`
+` git clone <repo>`  
+` cd <repo>`  
 `npm install`  
 `npm start`
 

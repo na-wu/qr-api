@@ -51,7 +51,7 @@ app.post("/api/generate", async function(req, res, next) {
 
 })
 
-app.get("/:uuid", function(req, res, next) {
+app.get("/api/:uuid", function(req, res, next) {
     var params = req.params
     console.log(params)
     res.sendFile(__dirname + '/public/' + params['uuid'])

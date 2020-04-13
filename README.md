@@ -30,7 +30,7 @@ You can then make post requests to `localhost:3000/api/generate`
 ###### JSON Request
 
 Key | Example | Headers
---------- | -------- | 
+--------- | -------- | -------- | 
 url | 'string_to_generate' | 'user' : 'string'
 
 #### Response

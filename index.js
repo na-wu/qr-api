@@ -1,12 +1,12 @@
 const express = require("express")
 const bodyparser = require('body-parser')
-const app = express()
+const ratelimiter = require('./ratelimiter')
+
 const env = require('./env.json')
 var QRCode = require('qrcode')
 const { v4: uuidv4 } = require('uuid');
 
-
-
+const app = express()
 
 async function generate(data, uuid) {
     return new Promise(function(resolve, reject) {
@@ -27,6 +27,7 @@ var port = process.env.PORT || 3000
 app.use(bodyparser.json()) // JSON data
 app.use(bodyparser.urlencoded({ extended: false })) //UTF-8 data
 app.use(express.static(__dirname + 'public'));
+app.use(ratelimiter) // rate limiter is applied to ALL endpoints
 
 app.listen(port, function() {
     console.log("Server running on port", port)
